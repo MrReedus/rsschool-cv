@@ -1,4 +1,164 @@
+
+ /*=============== Обнуление стилей ==============*/
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0px 0px 0px 0px;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
 body {
-    background-color: rgb(90, 89, 89);
-    color: rgb(108, 194, 158);
+    height: 100%;
+    line-height: 1;
+}
+
+/*===== Прижимаем футер к низу страницы =====*/
+
+.wrapper {
+   overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main {
+    flex: 1 1 auto;
+    
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+body {
+    background-color: rgb(192, 182, 140);
+    
+    font-family: 'Aleo', serif;
+
+}
+
+
+
+/*===== header =====*/
+.header {
+    background-color: rgb(162, 175, 180);
+    height: 80px;
+}
+
+.header__navigation {
+   display: flex;
+   justify-content: flex-end;
+   
+}
+
+.navigation {}
+
+.navigation__items {}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    padding-top: 30px;
+}
+
+.menu__item {}
+
+.menu__link {
+    text-transform: uppercase;
+    color: rgb(68, 70, 69);
+    font-size: 22px;
+    transition: .2s ease-in-out;
+}
+
+.menu__link:hover {
+border-bottom: 3px solid  rgb(91, 117, 115);
+}
+
+
+/*****************************/
+
+/*info*/
+
+
+.info {
+    padding: 90px 0px 0px 0px;
+   
+}
+
+.info__container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.info__avatar {
+   
+  
+}
+.info__avatar img {
+    display: block;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.info__text {
+    padding: 40px 0px 0px 0px;
+}
+
+.info__title {
+   font-size: 28px; 
+   margin-bottom: 60px;
+   letter-spacing: 8px;
+   text-transform: uppercase;
+}
+
+.info__subtitle {
+    text-transform: uppercase;
+      font-size: 26px;
+      position: relative;
+}
+
+.info__subtitle::before {
+    content: '';
+    width: 300px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: -30px;
+    right: 70px;
+}
+
+.info__line {
+    width: 1440px;
+    height: 16px;
+    background-color: rgb(139, 138, 138);
+    margin: 0 auto;
+    border-radius: 5px;
 }
