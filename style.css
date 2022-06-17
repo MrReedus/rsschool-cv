@@ -192,6 +192,7 @@ border-bottom: 3px solid  rgb(91, 117, 115);
 
 .contacts-menu__item {
     width: 360px; 
+
 }
 
 .contacts-menu__link {
@@ -249,7 +250,10 @@ border-bottom: 3px solid  rgb(91, 117, 115);
     flex-direction: column;
     gap:5px;
     align-items: center;
+}
 
+.skills__title {
+    max-width: 100px;
 }
 
 .skills-menu__item {
